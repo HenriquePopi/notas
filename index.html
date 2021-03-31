@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <title>Agenda</title>
+</head>
+
+<body>
+  <div class="container">
+    <section data-calendario>
+    </section>
+    <section data-nota="container">
+      <button class="fechar"></button>
+    </section>
+    <section data-novanota>
+      <button class="salvar-nota" data-btn="salvar-nota">Salvar Nota</button>
+      <form action="clck" class="nota-form">
+        <label for="titulo" class="label-nota">Titulo da nota</label>
+        <input type="text" name="titulo" placeholder=" digite..." data-input="titulo">
+        <label for="texto" class="label-nota">Exercicios</label>
+        <span class="exercicio-add">
+          <input type="text" name="texto" placeholder=" digite..." data-input="exercicios">
+          <button class="ok" data-btn="exercicios">+</button>
+        </span>
+      </form>
+      <div data-nota-div></div>
+    </section>
+  </div>
+  <script type="module" src="./js/script.js"></script>
+</body>
+
+</html>

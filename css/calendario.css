@@ -1,0 +1,33 @@
+[data-calendario] {
+  flex-grow: 1;
+}
+.mes {
+  display: flex;
+  flex-wrap: wrap;
+  width: 490px;
+  margin-top: 50px;
+}
+.mes li {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  background-color: aqua;
+  cursor: pointer;
+}
+@media (max-width: 700px) {
+  .mes {
+    display: flex;
+    flex-wrap: wrap;
+    width: 245px;
+    margin-top: 25px;
+  }
+  .mes li {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin: 5px;
+    background-color: aqua;
+    cursor: pointer;
+  }
+}

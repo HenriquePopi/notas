@@ -1,0 +1,54 @@
+[data-novanota] {
+  background-color: greenyellow;
+  align-self: flex-start;
+  padding: 30px;
+  max-width: 30%;
+}
+.nota-form input {
+  display: block;
+  background-color: #adff2f;
+  padding: 10px;
+  border: 3px solid black;
+  color: black;
+  font-weight: 600;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+.nota-form label {
+  display: block;
+  font-weight: bolder;
+  padding-top: 15px;
+}
+.exercicio-add {
+  display: flex;
+}
+.nota-form .ok {
+  align-self: center;
+  padding: 4px 8px;
+  position: relative;
+  top: -5px;
+  margin-left: 2px;
+  cursor: pointer;
+  border: 3px solid #000000;
+  border-radius: 5px;
+  font-weight: bold;
+  color: #000000;
+  background-color: rgba(0, 0, 0, 0.01);
+  font-size: 1.5em;
+}
+.salvar-nota {
+  padding: 4px 8px;
+  cursor: pointer;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin: 0;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.05);
+  font-size: 1.5em;
+}
+[data-nota-div] {
+  margin: none;
+  flex-wrap: wrap;
+  padding: 0;
+}

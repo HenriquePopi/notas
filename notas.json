@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "titulo": "Pernas A",
+    "date": "Data",
+    "color": "#fff",
+    "text": [" pistol squat","flexoes", " barras", "abs"]
+  },  {
+    "id": 1,
+    "titulo": "Pernas B",
+    "date": "Data",
+    "color": "#fff",
+    "text": [" pistol squat","flexoes", " barras", "abs"]
+  }
+
+]

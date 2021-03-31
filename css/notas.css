@@ -1,0 +1,71 @@
+@keyframes show-right {
+  from {
+    opacity: 0;
+    transform: translate3d(50px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes hide-right {
+  from {
+    opacity: 1;
+    transform: translate3d(50px, 0, 0);
+  }
+  to {
+    opacity: 0;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+[data-nota="container"] {
+  padding-left: 30px;
+  padding-top: 30px;
+  grid-area: notas;
+  max-width: 100%;
+  background-color: #ff0800;
+  animation: hide-right 0.4s forwards;
+}
+
+[data-nota="container"].active {
+  display: flex;
+  align-content: flex-start;
+  align-items: flex-start;
+  justify-content: flex-start;
+  animation: show-right 0.3s forwards;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+[data-nota="container"] .fechar {
+  margin-top: 150px;
+  border-top: 70px solid #ff0800;
+  border-bottom: 70px solid #ff0800;
+  border-left: 25px solid #ffffff;
+  cursor: pointer;
+  position: absolute;
+  left: 0px;
+}
+
+.nota {
+  padding: 10px;
+  min-width: calc(33% - 10px);
+  margin: 10px 10px 10px 0;
+}
+.nota .nota-titulo {
+  color: #000000;
+  font-weight: bold;
+  font-size: 20px;
+  padding-bottom: 5px;
+}
+.nota .nota-linha,
+.nota-linha {
+  display: block;
+  padding: 5px;
+  width: 100%;
+}
+.nota .nota-linha:nth-child(even),
+.nota-linha:nth-child(even) {
+  background-color: linen;
+  border-radius: 7px;
+}
