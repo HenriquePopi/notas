@@ -9,7 +9,6 @@ const novaNota = new NovaNota("[data-nota='container']")
 novaNota.init()
 
 
-
 let Notas 
 fetch('./notas.json')
 .then(r => r.text())

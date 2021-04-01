@@ -1,4 +1,3 @@
-import DropdownMenu from './dropdown-menu.js'
 export default class NovaNota{
   constructor(notasContainerElement){
     this.notasContainerElement =  document.querySelector(notasContainerElement)
@@ -39,7 +38,6 @@ export default class NovaNota{
     notaCriada.titulo = notaName.value
     const exercicios = document.querySelectorAll("[data-nota-div] .nota-linha")
     exercicios.forEach(exercicio => notaCriada.text.push(exercicio.innerText))
-    console.log(notaCriada)
 
     //apagando nota da tela
     document.querySelector("[data-input='titulo']").value = ""
