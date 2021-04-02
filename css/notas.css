@@ -64,8 +64,7 @@
   padding: 5px;
   width: 100%;
 }
-.nota .nota-linha:nth-child(even),
-.nota-linha:nth-child(even) {
+.nota .nota-linha:nth-child(even) {
   background-color: linen;
   border-radius: 7px;
 }

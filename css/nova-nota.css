@@ -20,7 +20,8 @@
   font-weight: bolder;
   padding-top: 15px;
 }
-.exercicio-add {
+.exercicio-add,
+.date-add {
   display: flex;
 }
 .nota-form .ok {
@@ -47,8 +48,23 @@
   background-color: rgba(0, 0, 0, 0.05);
   font-size: 1.5em;
 }
-[data-nota-div] {
-  margin: none;
-  flex-wrap: wrap;
-  padding: 0;
+
+[data-linha-div] .nota-linha:nth-child(odd) {
+  background-color: linen;
+  border-radius: 7px;
+}
+[data-data-div] {
+  border-bottom: solid 3px black;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+[data-data-div] .nota-linha {
+  display: inline-block;
+  width: 30%;
+  text-align: center;
+}
+
+[data-data-div] .nota-linha:nth-child(even) {
+  background-color: linen;
+  border-radius: 5px;
 }
