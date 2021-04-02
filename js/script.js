@@ -5,30 +5,20 @@ import NovaNota from './modules/nova-nota.js'
 import AbaNotas from './modules/aba-notas.js'
 
 //JSON.stringfy(object) transforma o objeto numa string tipo json
-const novaNota = new NovaNota("[data-nota='container']")
-novaNota.init()
 
 
 let Notas 
 fetch('./notas.json')
 .then(r => r.text())
 .then(jsonText => {
-  Notas = new NotaClass(JSON.parse(jsonText)); 
-  const notaElement = Notas.getAllNotes()
-  notaElement.forEach(nota =>{
-    novaNota.addNotaAJanela(nota)
-    //document.querySelector("[data-nota='container']").appendChild(nota) 
-  })
-});
-
-fetch('./notas.json')
-.then(r => r.text())
-.then(jsonText => {
-  Notas = JSON.parse(jsonText); 
-  Notas.push({"a":"b"})
+  Notas = new NovaNota("[data-nota='container']",JSON.parse(jsonText)); 
+  Notas.init()
+  Notas.addNotaAJanela()
     //document.querySelector("[data-nota='container']").appendChild(nota) 
   
 });
+
+
 
 Date.prototype.diasNoCorrenteMes = function() {
   var days = [30, 31],
